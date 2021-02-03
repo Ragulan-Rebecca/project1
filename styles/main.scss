@@ -235,12 +235,16 @@ template {
   border: 1px solid lightcoral;
 }
 
+// START OF HEADER
+
 header {
   background-image: url(../assets/header-home.jpg);
   background-size: cover;
   height: 50vh;
   background-position: center;
 }
+
+
 
 // body {
 //   font-family: "Kumar One", cursive;
@@ -250,12 +254,19 @@ header {
   font-family: "Kumar One Outline", cursive;
 }
 
+
 nav {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Lato", sans-serif;
 }
+ul.nav{
+  display: flex;
+}
 
 li {
   list-style-type: none;
 }
+
+
+// END OF HEADER
