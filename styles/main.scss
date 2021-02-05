@@ -331,19 +331,32 @@ li {
 // GALLERY END
 
 // START OF FEATURES
-.features{
+.features {
   display: flex;
   flex-wrap: wrap;
 }
 
-.featureBox{
+.featureBox {
   width: 50%;
   display: flex;
 }
 
-
-
-
 .fas {
   font-size: 50px;
+}
+
+// Read More
+
+.readMore {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.readBox {
+  width: 50%;
+}
+
+.readBox img {
+  width: 100%;
+  object-fit: cover;
 }
