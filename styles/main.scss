@@ -277,13 +277,27 @@ li {
 
 .gallery {
   display: flex;
-  background: #e0fddf;
+  background-color: #e0fddf;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.box {
-  justify-content: center;
+.box{
+  width: 30%;
+}
+
+.box img{
+  width: 100%;
 }
 
 .flexTest {
   display: flex;
+}
+
+// GALLERY END
+
+// START OF FEATURES
+
+.fas{
+  font-size: 50px;
 }

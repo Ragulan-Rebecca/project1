@@ -316,18 +316,29 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #e0fddf;
-}
-
-.box {
+  background-color: #e0fddf;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.box {
+  width: 30%;
+}
+
+.box img {
+  width: 100%;
 }
 
 .flexTest {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.fas {
+  font-size: 50px;
 }
 /*# sourceMappingURL=main.css.map */
