@@ -331,6 +331,18 @@ li {
 // GALLERY END
 
 // START OF FEATURES
+.features{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featureBox{
+  width: 50%;
+  display: flex;
+}
+
+
+
 
 .fas {
   font-size: 50px;
