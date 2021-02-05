@@ -280,6 +280,11 @@ template {
   border: 1px solid lightcoral;
 }
 
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+
 header {
   background-image: url(../assets/header-home.jpg);
   background-size: cover;
@@ -299,5 +304,30 @@ nav {
 
 li {
   list-style-type: none;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e0fddf;
+}
+
+.box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexTest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

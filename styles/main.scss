@@ -235,6 +235,11 @@ template {
   border: 1px solid lightcoral;
 }
 
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+
 // START OF HEADER
 
 header {
@@ -244,8 +249,6 @@ header {
   background-position: center;
 }
 
-
-
 // body {
 //   font-family: "Kumar One", cursive;
 // }
@@ -254,19 +257,33 @@ header {
   font-family: "Kumar One Outline", cursive;
 }
 
-
 nav {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Lato", sans-serif;
-}
-ul.nav{
-  display: flex;
 }
 
 li {
   list-style-type: none;
 }
 
+.navigation {
+  display: flex;
+}
 
 // END OF HEADER
+
+// Gallery Start
+
+.gallery {
+  display: flex;
+  background: #e0fddf;
+}
+
+.box {
+  justify-content: center;
+}
+
+.flexTest {
+  display: flex;
+}
