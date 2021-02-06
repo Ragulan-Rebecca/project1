@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./contactStyles/contactStyles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contactStyles/contactStyles.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap"
-    rel="stylesheet"/
-    ><script src="https://kit.fontawesome.com/853a2b2ac6.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/853a2b2ac6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
-</head>
-<body>
-    <h1>Get in Touch</h1>
-        <form action="">
-          <fieldset>
-            <label for="name" id="name" class="name">Name</label>
-            <input type="text" id="name" class="name" placeholder="name"> 
-
-
-            <label for="email" class="visuallyHidden">Email</label>
-            <input type="email" placeholder="Email" id="email" />
-
-            <label for="confirmEmail" class="visuallyHidden">Confirm email</label>
-            <input type="email" placeholder="Confirm email" id="confirmEmail" />
-
-            <label for="password" class="visuallyHidden">Password</label>
-            <input
-              type="password"
-              placeholder="Password"
-              name="password"
-              id="password"
-            />
-            <label for="preferredName" class="visuallyHidden"
-              >What should we call you?</label
-            >
-            <input
-              type="text"
-              name="preferredName"
-              id="preferredName"
-              placeholder="What should we call you?"
-            />
-            <button type="submit">Submit</button>
-          </fieldset>
-
-        </form>
+  </head>
+  <body>
+    <header>
+      <h1>Santuary Helpers</h1>
+      <div class="wrapper headerContent">
+        <div class="logo"></div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>Get in Touch</h1>
       </div>
-    
-</body>
+    </header>
+
+    <section class="formAndInfo">
+      <form action="">
+        <fieldset>
+          <!-- name -->
+          <label for="name" id="name" class="name">Name</label>
+          <input type="text" id="name" class="name" placeholder="name" />
+
+          <!-- email -->
+          <label for="email" class="visuallyHidden">Email</label>
+          <input type="email" placeholder="Email" id="email" />
+
+          <!-- text area -->
+          <label for="text">Message</label>
+          <textarea id="textarea" name="textarea" rows="4" cols="50">
+              Message
+            </textarea
+          >
+          <!-- submit button -->
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+
+      <div>
+        <div class="socialIcons">
+          <i>facebook</i>
+          <i>instagram</i>
+          <i>twitter</i>
+          <i>whats app</i>
+        </div>
+        <div class="companyInfo">
+          <p>123-456-7890</p>
+          <p>123 Queen Street West, Unit 10</p>
+          <p>Toronto, Ontario</p>
+          <p>M5V2D5</p>
+        </div>
+      </div>
+    </section>
+    <footer>Copyright &copy 2021 Juno College</footer>
+  </body>
 </html>

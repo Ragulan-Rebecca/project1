@@ -1,9 +1,28 @@
-
 @import "../styles/setup";
 @import "../styles/fontsAndColors";
 
-
-
-body{
-    background-color: blue;
+// Header Start
+header {
+  background-image: url(../assets/contact-image.jpg);
+  height: 50vh;
 }
+
+.formAndInfo {
+  height: 50vh;
+  background-color: $specialGreen;
+}
+
+// FOOTER START
+footer {
+  height: 5vh;
+  background: $specialBlack;
+  color: $specialWhite;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: $secondaryFont;
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+//FOOTER END
