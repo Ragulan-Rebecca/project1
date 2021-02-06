@@ -277,6 +277,7 @@ template {
 }
 
 * {
+  border: 1px solid lightcoral;
   font-size: 62.5%;
 }
 
@@ -455,6 +456,7 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 50px;
 }
 
 .featureBox {
@@ -465,7 +467,16 @@ p {
 }
 
 .fas {
-  font-size: 50px;
+  font-size: 3rem;
+  background: #f8fb05;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.featureBox h2 {
+  margin: 0;
 }
 
 .readMore {
@@ -491,6 +502,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   background-size: contain;
+  margin-bottom: 100px;
 }
 
 .bottomBannerImage img {
@@ -511,6 +523,7 @@ p {
 }
 
 .bottomBannerText {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,8 +555,9 @@ footer {
   color: #f5f5f5;
   font-size: 2rem;
   text-align: center;
-  padding-top: 5px;
+  padding: 10px 0 10px 0;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  margin-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */
