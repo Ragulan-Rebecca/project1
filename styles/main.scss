@@ -1,5 +1,6 @@
 @import "./setup";
 @import "./fontsAndColors";
+@import "./contact";
 
 // main styles
 * {
@@ -8,7 +9,7 @@
 }
 
 body {
-  background: #f5f5f5;
+  background: $specialWhite;
 }
 
 .wrapper {
@@ -22,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Kumar One", cursive;
+  font-family: $primaryFont;
   font-size: 3.3rem;
   line-height: 5.8rem;
   letter-spacing: 0.21rem;
@@ -32,7 +33,7 @@ h2 {
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: $secondaryFont;
   font-weight: 400;
   line-height: 3.2rem;
   font-size: 2rem;
@@ -40,15 +41,15 @@ p {
 }
 
 button {
-  font-family: "Kumar One", cursive;
+  font-family: $primaryFont;
   font-size: 2rem;
   text-align: center;
   line-height: 3.2rem;
   letter-spacing: 0.1rem;
   padding: 7px 12px 7px 12px;
   color: #f5f5f5;
-  background: #065635;
-  border: 1px solid #065635;
+  background: $buttonColor;
+  border: 1px solid $buttonColor;
 }
 // START OF HEADER
 
@@ -98,8 +99,8 @@ nav ul a {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
-  color: black;
+  font-family: $secondaryFont;
+  color: $specialBlack;
   text-decoration: none;
   margin-left: 40px;
 }
@@ -134,7 +135,7 @@ nav ul a:hover {
 .yellowBox {
   width: 304px;
   height: 304px;
-  background: #f8fb05;
+  background: $accentColor;
   z-index: 2;
   position: absolute;
   top: 0;
@@ -146,7 +147,7 @@ nav ul a:hover {
 // Gallery Start
 
 .gallery {
-  background-color: #e0fddf;
+  background-color: $specialGreen;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -189,7 +190,7 @@ nav ul a:hover {
 
 .fas {
   font-size: 2.3rem;
-  background: #f8fb05;
+  background: $accentColor;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
@@ -206,7 +207,7 @@ nav ul a:hover {
 .readMore {
   display: flex;
   flex-wrap: wrap;
-  background: #e0fddf;
+  background: $specialGreen;
   padding: 50px 0 50px 0;
 }
 
@@ -282,12 +283,12 @@ nav ul a:hover {
 // FOOTER START
 footer {
   height: 5vh;
-  background: #151514;
-  color: #f5f5f5;
+  background: $specialBlack;
+  color: $specialWhite;
   font-size: 2rem;
   text-align: center;
   padding: 10px 0 10px 0;
-  font-family: "Lato", sans-serif;
+  font-family: $secondaryFont;
   font-weight: 400;
   margin-top: 100px;
 }

@@ -276,6 +276,14 @@ template {
   overflow: hidden;
 }
 
+body {
+  background: blue;
+}
+
+h1 {
+  color: pink;
+}
+
 * {
   border: 1px solid lightcoral;
   font-size: 62.5%;
@@ -378,7 +386,7 @@ nav ul a {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Lato", sans-serif;
-  color: black;
+  color: #151514;
   text-decoration: none;
   margin-left: 40px;
 }
