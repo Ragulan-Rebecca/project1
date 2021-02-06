@@ -261,6 +261,12 @@ p {
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
+
+button{
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+
+ }
 // START OF HEADER
 
 header {
@@ -282,6 +288,8 @@ header {
 .headerSofa img {
   width: 100%;
 }
+
+
 
 // body {
 //   font-family: "Kumar One", cursive;
@@ -360,3 +368,38 @@ li {
   width: 100%;
   object-fit: cover;
 }
+
+// end of readmore
+
+//Start of Bottom Banner
+
+.bottomBannerImage{
+  width: 100%;
+  display: flex;
+}
+
+.bottomBanner{
+  height: 50vh;
+  display: flex;
+}
+
+.bottomBannertext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomBanner h2,
+.bottomBanner p,
+.bottomBanner button{
+  // justify-content: center;
+  text-align: center;
+}
+.bottomBanner p{
+  width: 60%;
+}
+
+// FOOTER
+
+
+//END OF FOOTER
