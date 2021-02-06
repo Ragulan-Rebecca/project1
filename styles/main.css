@@ -398,8 +398,7 @@ nav ul a:hover {
   margin-bottom: 50px;
 }
 
-.materialContent > h2,
-p {
+.materialContent > h2 p {
   width: 90%;
 }
 
@@ -457,6 +456,7 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .featureBox {
@@ -467,12 +467,13 @@ p {
 }
 
 .fas {
-  font-size: 3rem;
+  font-size: 2.3rem;
   background: #f8fb05;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
   height: 50px;
+  text-align: center;
 }
 
 .featureBox h2 {
@@ -485,6 +486,8 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: #e0fddf;
+  padding: 50px 0 50px 0;
 }
 
 .readBox {
@@ -492,9 +495,21 @@ p {
 }
 
 .readBox img {
-  width: 100%;
+  width: 85%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.newLocationsText {
+  text-align: right;
+}
+
+.newLocationsText {
+  padding: 40px;
+}
+
+.groupProgramsText {
+  padding: 40px;
 }
 
 .bottomBannerImage {
