@@ -268,7 +268,7 @@ button {
   text-align: center;
   line-height: 3.2rem;
   letter-spacing: 0.1rem;
-  padding: 7px;
+  padding: 7px 12px 7px 12px;
   color: #f5f5f5;
   background: #065635;
   border: 1px solid #065635;
@@ -280,15 +280,20 @@ header {
   background-size: cover;
   height: 100vh;
   background-position: center;
+  position: relative;
 }
 
 .headerContent {
   display: flex;
   justify-content: space-between;
+
 }
 
 .headerSofa {
   width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .headerSofa img {
@@ -301,6 +306,12 @@ header {
 
 .logo {
   font-family: "Kumar One Outline", cursive;
+  font-weight: 400;
+  line-height: 6.4rem;
+  font-size: 6.8rem;
+  text-transform: uppercase;
+  margin-left: 50px;
+  z-index: 3;
 }
 
 li {
@@ -320,7 +331,23 @@ nav ul a {
   text-decoration: none;
   margin-left: 40px;
 }
+
+nav ul a:hover{
+  border-bottom: 2px solid #f8fb05;
+}
+
+
 // END OF HEADER
+
+//New Materials Section Start
+
+.materialsSection{
+  display: flex;
+  align-items: center;
+}
+
+
+// en dof new materials
 
 // Gallery Start
 
