@@ -232,7 +232,7 @@ template {
 // main styles
 
 * {
-  border: 1px solid lightcoral;
+  // border: 1px solid lightcoral;
   font-size: 62.5%;
 }
 
@@ -256,6 +256,8 @@ h2 {
   line-height: 5.8rem;
   letter-spacing: 0.21rem;
   font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 p {
@@ -350,7 +352,8 @@ nav ul a:hover {
   margin-bottom: 50px;
 }
 
-.materialContent > h2, p {
+.materialContent > h2,
+p {
   width: 90%;
 }
 
@@ -382,7 +385,7 @@ nav ul a:hover {
   padding-bottom: 50px;
 }
 
-.galleryContainer{
+.galleryContainer {
   display: flex;
   justify-content: space-between;
 }
@@ -434,7 +437,7 @@ nav ul a:hover {
 
 // end of readmore
 
-//Start of Bottom Banner
+//Bottom Banner Image
 
 .bottomBannerImage {
   display: flex;
@@ -445,37 +448,48 @@ nav ul a:hover {
   width: 100%;
 }
 
+//Bottom Style Section
+
 .bottomBanner {
   height: 50vh;
-  display: flex;
-}
-
-.bottomBannertext {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bottomBanner h2,
-.bottomBanner p,
-.bottomBanner button {
-  // justify-content: center;
-  text-align: center;
-}
-.bottomBanner p {
-  width: 60%;
+.bottomBannerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-direction: column;
 }
 
+// .bottomBanner h2,
+// .bottomBanner p,
+// .bottomBanner button {
+//   // justify-content: center;
+//   text-align: center;
+// }
+
+.bottomBanner p {
+  width: 90%;
+  text-align: left;
+}
+
+.bottomBanner button {
+  margin: 0 auto;
+}
 
 // FOOTER START
-footer{
+footer {
   height: 5vh;
   background: #151514;
   color: #f5f5f5;
   font-size: 2rem;
   text-align: center;
   padding-top: 5px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
