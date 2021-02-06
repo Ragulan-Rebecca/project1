@@ -310,6 +310,13 @@ p {
 button {
   font-family: "Kumar One", cursive;
   font-size: 2rem;
+  text-align: center;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  padding: 7px;
+  color: #f5f5f5;
+  background: #065635;
+  border: 1px solid #065635;
 }
 
 header {
@@ -340,12 +347,6 @@ header {
   font-family: "Kumar One Outline", cursive;
 }
 
-nav {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
-}
-
 li {
   list-style-type: none;
 }
@@ -354,6 +355,16 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+nav ul a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
 }
 
 .gallery {
@@ -420,10 +431,14 @@ li {
 }
 
 .bottomBannerImage {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-size: contain;
+}
+
+.bottomBannerImage img {
+  width: 100%;
 }
 
 .bottomBanner {

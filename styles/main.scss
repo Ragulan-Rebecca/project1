@@ -262,11 +262,17 @@ p {
   letter-spacing: 0.2rem;
 }
 
-button{
+button {
   font-family: "Kumar One", cursive;
   font-size: 2rem;
-
- }
+  text-align: center;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+  padding: 7px;
+  color: #f5f5f5;
+  background: #065635;
+  border: 1px solid #065635;
+}
 // START OF HEADER
 
 header {
@@ -289,20 +295,12 @@ header {
   width: 100%;
 }
 
-
-
 // body {
 //   font-family: "Kumar One", cursive;
 // }
 
 .logo {
   font-family: "Kumar One Outline", cursive;
-}
-
-nav {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
 }
 
 li {
@@ -313,6 +311,15 @@ li {
   display: flex;
 }
 
+nav ul a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
+}
 // END OF HEADER
 
 // Gallery Start
@@ -373,17 +380,21 @@ li {
 
 //Start of Bottom Banner
 
-.bottomBannerImage{
-  width: 100%;
+.bottomBannerImage {
   display: flex;
+  background-size: contain;
 }
 
-.bottomBanner{
+.bottomBannerImage img {
+  width: 100%;
+}
+
+.bottomBanner {
   height: 50vh;
   display: flex;
 }
 
-.bottomBannertext{
+.bottomBannertext {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,15 +402,14 @@ li {
 
 .bottomBanner h2,
 .bottomBanner p,
-.bottomBanner button{
+.bottomBanner button {
   // justify-content: center;
   text-align: center;
 }
-.bottomBanner p{
+.bottomBanner p {
   width: 60%;
 }
 
 // FOOTER
-
 
 //END OF FOOTER
