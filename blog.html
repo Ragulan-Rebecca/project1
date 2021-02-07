@@ -46,7 +46,7 @@
           />
         </div>
         <!-- Blog Content -->
-        <div>
+        <div class="wrapper blogPostText">
           <h2>Finding the right pieces for new space</h2>
           <p class="blogDate">
             Monday, October 5th, 2019 by <span>Saron</span>
@@ -152,25 +152,23 @@
     </section>
 
     <!-- Blog Form -->
-    <section class="formAndInfo">
+    <section class="blogForm wrapper">
       <form action="">
         <fieldset>
           <!-- name -->
-          <label for="name" id="name" class="name">Name</label>
-          <input type="text" id="name" class="name" placeholder="name" />
+          <label for="name" class="visuallyHidden">Name</label>
+          <input type="text" class="name" placeholder="Name" />
 
           <!-- email -->
           <label for="email" class="visuallyHidden">Email</label>
-          <input type="email" placeholder="Email" id="email" />
+          <input type="email" placeholder="Email Address" id="email" />
 
           <!-- text area -->
-          <label for="text">Message</label>
-          <textarea id="textarea" name="textarea" rows="4" cols="50">
-              Message
-            </textarea
-          >
+          <label for="text" class="visuallyHidden">Comment</label>
+          <textarea id="textArea" name="textarea" class="textArea" placeholder="Comment" rows="6" cols="50"></textarea>
+          
           <!-- submit button -->
-          <button type="submit">Post Comment</button>
+          <button type="submit" class="blogButton">Post Comment</button>
         </fieldset>
       </form>
     </section>

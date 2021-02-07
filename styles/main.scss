@@ -4,7 +4,7 @@
 
 // main styles
 * {
-  border: 1px solid lightcoral;
+  // border: 1px solid lightcoral;
   font-size: 62.5%;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-  width: 90vw;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -40,9 +40,9 @@ h4 {
   @include h4Styles();
 }
 
-li {
-  font-size: 2rem;
-}
+// li {
+//   font-size: 2rem;
+// }
 
 img {
   width: 100%;
@@ -356,8 +356,13 @@ footer {
   background-color: $specialWhite;
   margin-bottom: 30px;
 }
+
+
 .blogDate {
   font-style: italic;
+}
+.blogPostText{
+  padding-left: 20px;
 }
 
 .sideBar {
@@ -403,4 +408,47 @@ footer {
 
 .commentText {
   width: 100%;
+}
+
+// BLOG FORM START
+
+.blogForm{
+  font-size: 6rem;
+  font-family: $secondaryFont;
+}
+
+fieldset{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid $buttonColor;
+  background-color: $specialGreen;
+  font-family: $secondaryFont;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 20px;
+  width: 30%;
+}
+
+.textArea{
+  border: 1px solid $buttonColor;
+  background-color: $specialGreen;
+  display: block;
+  margin-top:25px;
+  margin-bottom: 30px;
+  font-family: $secondaryFont;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 60%;
+
+}
+
+.blogButton{
+  width: 60%;
 }
