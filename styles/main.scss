@@ -63,6 +63,11 @@ button {
   background: $buttonColor;
   border: 1px solid $buttonColor;
 }
+
+span{
+  font-size: 2rem;
+  font-weight: 700;
+}
 // START OF HEADER
 
 .mainHeader {
@@ -306,12 +311,32 @@ footer {
 
 // blog header
 
+.blogBody{
+  background-color: $specialGreen;
+}
+
 .blogHeader {
   background-image: url(../assets/blog-image.jpg);
   height: 50vh;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   @include headerStyles();
+  // justify-content: space-between;
+}
+
+.blogheaderTitle{
+  display: flex;
   justify-content: space-between;
+
+}
+
+.blogTitleAndLogo{
+  display: flex;
+  flex-direction: column;
+}
+
+.blogTitleAndLogo h3{
+  margin-bottom: 63px;
 }
 
 // end of blog header
@@ -325,10 +350,15 @@ footer {
 
 .blogPost {
   width: 60%;
+  background-color: $specialWhite;
+}
+.blogDate{
+  font-style: italic;
 }
 
 .sideBar {
   width: 20%;
+  background-color: $accentColor;
 }
 
 // end of blog and side bar layout
