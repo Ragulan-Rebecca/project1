@@ -4,7 +4,7 @@
 
 // main styles
 * {
-  // border: 1px solid lightcoral;
+  border: 1px solid lightcoral;
   font-size: 62.5%;
 }
 
@@ -216,6 +216,15 @@ nav ul a:hover {
   text-align: center;
 }
 
+.fab {
+  font-size: 2.3rem;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: $buttonColor;
+}
+
 .featureBox h2 {
   margin: 0;
 }
@@ -357,11 +366,10 @@ footer {
   margin-bottom: 30px;
 }
 
-
 .blogDate {
   font-style: italic;
 }
-.blogPostText{
+.blogPostText {
   padding-left: 20px;
 }
 
@@ -412,12 +420,12 @@ footer {
 
 // BLOG FORM START
 
-.blogForm{
+.blogForm {
   font-size: 6rem;
   font-family: $secondaryFont;
 }
 
-fieldset{
+fieldset {
   padding: 0;
   margin: 0;
   border: none;
@@ -434,11 +442,11 @@ input {
   width: 30%;
 }
 
-.textArea{
+.textArea {
   border: 1px solid $buttonColor;
   background-color: $specialGreen;
   display: block;
-  margin-top:25px;
+  margin-top: 25px;
   margin-bottom: 30px;
   font-family: $secondaryFont;
   text-transform: uppercase;
@@ -446,9 +454,38 @@ input {
   padding-top: 20px;
   padding-left: 20px;
   width: 60%;
-
 }
 
-.blogButton{
+.blogButton {
   width: 60%;
+}
+
+// End of Blog
+
+// Contact Page
+.contactBody {
+  background-color: $specialGreen;
+}
+
+.contactHeader {
+  @include headerStyles();
+  background-image: url(../assets/contact-image.jpg);
+  height: 50vh;
+}
+
+.formAndInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactFieldSet {
+  width: 100%;
+}
+
+.companyInfo p {
+  margin: 0;
+}
+
+.companyEmail {
+  padding-bottom: 20px;
 }

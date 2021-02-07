@@ -277,6 +277,7 @@ template {
 }
 
 * {
+  border: 1px solid lightcoral;
   font-size: 62.5%;
 }
 
@@ -495,6 +496,15 @@ nav ul a:hover {
   width: 50px;
   height: 50px;
   text-align: center;
+}
+
+.fab {
+  font-size: 2.3rem;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #065635;
 }
 
 .featureBox h2 {
@@ -745,5 +755,40 @@ input {
 
 .blogButton {
   width: 60%;
+}
+
+.contactBody {
+  background-color: #e0fddf;
+}
+
+.contactHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/contact-image.jpg);
+  height: 50vh;
+}
+
+.formAndInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactFieldSet {
+  width: 100%;
+}
+
+.companyInfo p {
+  margin: 0;
+}
+
+.companyEmail {
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

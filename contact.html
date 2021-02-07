@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <title>Contact</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
@@ -12,57 +14,71 @@
       src="https://kit.fontawesome.com/853a2b2ac6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact</title>
   </head>
-  <body>
-    <header>
-      <h1>Santuary Helpers</h1>
-      <div class="wrapper headerContent">
-        <div class="logo"></div>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Get in Touch</h1>
+  <body class="contactBody">
+    <header class="contactHeader">
+      <div class="wrapper blogheaderTitle">
+        <div class="blogTitleAndLogo">
+          <h3>
+            Santuary <br />
+            Helpers
+          </h3>
+          <h1 class="logo">Get in Touch</h1>
+        </div>
+
+        <div class="headerContent">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <section class="formAndInfo">
-      <form action="">
-        <fieldset>
-          <!-- name -->
-          <label for="name" id="name" class="name">Name</label>
-          <input type="text" id="name" class="name" placeholder="name" />
+    <section class="formAndInfo wrapper">
+      <div class="contactFormContainer">
+        <form action="">
+          <fieldset class="contactFieldSet">
+            <!-- name -->
+            <label for="name" class="visuallyHidden">Name</label>
+            <input type="text" class="name" placeholder="Name" />
 
-          <!-- email -->
-          <label for="email" class="visuallyHidden">Email</label>
-          <input type="email" placeholder="Email" id="email" />
+            <!-- email -->
+            <label for="email" class="visuallyHidden">Email</label>
+            <input type="email" placeholder="Email Address" id="email" />
 
-          <!-- text area -->
-          <label for="text">Message</label>
-          <textarea id="textarea" name="textarea" rows="4" cols="50">
-              Message
-            </textarea
-          >
-          <!-- submit button -->
-          <button type="submit">Submit</button>
-        </fieldset>
-      </form>
+            <!-- text area -->
+            <label for="text" class="visuallyHidden">Comment</label>
+            <textarea
+              id="textArea"
+              name="textarea"
+              class="textArea"
+              placeholder="Comment"
+              rows="6"
+              cols="50"
+            ></textarea>
 
-      <div>
+            <!-- submit button -->
+            <button type="submit" class="blogButton">Post Comment</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="socialAndContactInfo">
         <div class="socialIcons">
-          <i>facebook</i>
-          <i>instagram</i>
-          <i>twitter</i>
-          <i>whats app</i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-whatsapp"></i>
         </div>
         <div class="companyInfo">
+          <p class="companyEmail">info@email.com</p>
           <p>123-456-7890</p>
-          <p>123 Queen Street West, Unit 10</p>
+          <p>123 Queen Street West,</p>
+          <p>Unit 10</p>
           <p>Toronto, Ontario</p>
           <p>M5V2D5</p>
         </div>
