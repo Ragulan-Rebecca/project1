@@ -34,7 +34,14 @@ h2 {
 
 h3 {
   @include h3Styles();
+}
 
+h4 {
+  @include h4Styles();
+}
+
+img {
+  width: 100%;
 }
 
 p {
@@ -86,7 +93,6 @@ button {
   line-height: 6.4rem;
   font-size: 6.8rem;
   text-transform: uppercase;
-  margin-left: 50px;
   z-index: 3;
 }
 
@@ -298,9 +304,36 @@ footer {
 
 //FOOTER END
 
-.blogHeader{
+// blog header
+
+.blogHeader {
   background-image: url(../assets/blog-image.jpg);
   height: 50vh;
   flex-wrap: wrap;
   @include headerStyles();
+  justify-content: space-between;
+}
+
+// end of blog header
+
+// blog and side bar layout
+
+.blogAndSideBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogPost {
+  width: 60%;
+}
+
+.sideBar {
+  width: 20%;
+}
+
+// end of blog and side bar layout
+
+// comment box layout
+.commentContainer {
+  display: flex;
 }

@@ -10,17 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-     
-
-
-    </style>
   </head>
   <body>
     <!-- top section of blog -->
-    <header class="blogHeader">
-      <h3>Santuary Helpers</h3>
+    <header class="blogHeader wrapper">
+      <div>
+        <h3>Santuary<br />Helpers</h3>
+        <h1 class="logo">Blog</h1>
+      </div>
       <nav>
         <ul class="navigation">
           <li><a href="./index.html">Home</a></li>
@@ -29,77 +26,80 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <h1 class="logo">Blog</h1>
     </header>
     <!-- section -->
 
     <!-- Blog -->
-    <section class="blogPost">
-      <!-- blog image -->
-      <div>
-        <img
-          src="./assets/blog-post-image.jpg"
-          alt="white sofa bed with light blue wooden frame covered in pillows and water color painting above"
-        />
+
+    <section class="blogAndSideBar">
+      <div class="blogPost">
+        <!-- blog image -->
+        <div>
+          <img
+            src="./assets/blog-post-image.jpg"
+            alt="white sofa bed with light blue wooden frame covered in pillows and water color painting above"
+          />
+        </div>
+        <!-- Blog Content -->
+        <div>
+          <h2>Finding the right pieces for new space</h2>
+          <h3>Monday, October 5th, 2019 by <em>Saron</em></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam saepe vitae atque ullam quam quia nisi illum culpa odit?Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Architecto,
+            esse? Necessitatibus autem dolores molestias omnis iste officia quas
+            sint aspernatur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam saepe vitae atque ullam quam quia nisi illum culpa odit?Lorem
+            ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Tempora sint, sequi nihil omnis optio vitae ipsa
+            voluptatum nulla mollitia molestias?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam saepe vitae atque ullam quam quia nisi illum culpa odit?Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            quibusdam iure facilis dolores quidem enim at consequuntur vitae
+            ipsam maiores? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Porro, at!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam saepe vitae atque ullam quam quia nisi illum culpa odit?
+          </p>
+        </div>
       </div>
-      <!-- Blog Content -->
-      <div>
-        <h2>Finding the right pieces for new space</h2>
-        <h3>Monday, October 5th, 2019 by <em>Saron</em></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          magnam saepe vitae atque ullam quam quia nisi illum culpa odit?Lorem
-          ipsum dolor sit amet consectetur, adipisicing elit. Architecto, esse?
-          Necessitatibus autem dolores molestias omnis iste officia quas sint
-          aspernatur.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          magnam saepe vitae atque ullam quam quia nisi illum culpa odit?Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Tempora sint, sequi nihil omnis optio vitae ipsa
-          voluptatum nulla mollitia molestias?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          magnam saepe vitae atque ullam quam quia nisi illum culpa odit?Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, nisi.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-          quibusdam iure facilis dolores quidem enim at consequuntur vitae ipsam
-          maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Porro, at!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          magnam saepe vitae atque ullam quam quia nisi illum culpa odit?
-        </p>
+
+      <div class="sideBar">
+        <img
+          src="./assets/sidebar-image.jpg"
+          alt="rose gold metal pendant light"
+        />
+        <div>
+          <h3>Our Mission</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+            soluta.
+          </p>
+        </div>
+        <div>
+          <h3>Recent Posts</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <div class="sideBar">
-      <img
-        src="./assets/sidebar-image.jpg"
-        alt="rose gold metal pendant light"
-      />
-      <div>
-        <h3>Our Mission</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, soluta.
-        </p>
-      </div>
-      <div>
-        <h3>Recent Posts</h3>
-        <ul>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-          <li>Lorem ipsum dolor sit.</li>
-        </ul>
-      </div>
-    </div>
-
     <!-- Comment Section -->
-    <section>
+    <section class="wrapper">
       <h3>Comments:</h3>
       <div class="commentContainer">
         <div>
@@ -118,6 +118,7 @@
           </p>
         </div>
       </div>
+
       <div class="commentContainer">
         <div>
           <img

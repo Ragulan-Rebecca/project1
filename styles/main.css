@@ -311,6 +311,16 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
 p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -367,7 +377,6 @@ button {
   line-height: 6.4rem;
   font-size: 6.8rem;
   text-transform: uppercase;
-  margin-left: 50px;
   z-index: 3;
 }
 
@@ -594,5 +603,31 @@ footer {
   display: flex;
   background-size: cover;
   background-position: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogAndSideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogPost {
+  width: 60%;
+}
+
+.sideBar {
+  width: 20%;
+}
+
+.commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
