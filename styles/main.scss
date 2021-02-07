@@ -1,6 +1,5 @@
 @import "./setup";
 @import "./fontsAndColors";
-@import "./contact";
 
 // main styles
 * {
@@ -53,7 +52,7 @@ button {
 }
 // START OF HEADER
 
-header {
+.mainHeader {
   background-image: url(../assets/header-home.jpg);
   background-size: cover;
   height: 100vh;

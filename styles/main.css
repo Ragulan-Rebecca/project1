@@ -276,14 +276,6 @@ template {
   overflow: hidden;
 }
 
-body {
-  background: blue;
-}
-
-h1 {
-  color: pink;
-}
-
 * {
   border: 1px solid lightcoral;
   font-size: 62.5%;
@@ -333,7 +325,7 @@ button {
   border: 1px solid #065635;
 }
 
-header {
+.mainHeader {
   background-image: url(../assets/header-home.jpg);
   background-size: cover;
   height: 100vh;
