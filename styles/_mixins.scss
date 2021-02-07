@@ -1,0 +1,11 @@
+@mixin headerStyles {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin h3Styles {
+    font-family: $primaryFont;
+    font-size: 2rem;
+    text-transform: uppercase;
+}

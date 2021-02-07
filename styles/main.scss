@@ -1,5 +1,6 @@
 @import "./setup";
 @import "./fontsAndColors";
+@import "./mixins";
 
 // main styles
 * {
@@ -31,6 +32,11 @@ h2 {
   display: inline-block;
 }
 
+h3 {
+  @include h3Styles();
+
+}
+
 p {
   font-family: $secondaryFont;
   font-weight: 400;
@@ -54,10 +60,8 @@ button {
 
 .mainHeader {
   background-image: url(../assets/header-home.jpg);
-  background-size: cover;
   height: 100vh;
-  background-position: center;
-  position: relative;
+  @include headerStyles();
 }
 
 .headerContent {
@@ -293,3 +297,10 @@ footer {
 }
 
 //FOOTER END
+
+.blogHeader{
+  background-image: url(../assets/blog-image.jpg);
+  height: 50vh;
+  flex-wrap: wrap;
+  @include headerStyles();
+}
