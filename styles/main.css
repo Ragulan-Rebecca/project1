@@ -339,6 +339,7 @@ button {
   color: #f5f5f5;
   background: #065635;
   border: 1px solid #065635;
+  text-transform: uppercase;
 }
 
 span {
@@ -735,8 +736,7 @@ input {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 20px;
-  width: 30%;
+  padding-top: 20px;
 }
 
 .textArea {
@@ -771,7 +771,16 @@ input {
   height: 50vh;
 }
 
+.contactFormContainer .textArea, .contactButton {
+  width: 100%;
+}
+
+.contactFormContainer .email {
+  width: 50%;
+}
+
 .formAndInfo {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,7 +790,25 @@ input {
 }
 
 .contactFieldSet {
+  background-color: #f5f5f5;
   width: 100%;
+}
+
+.contactFieldSet .name, .contactEmail, .textArea {
+  background-color: #f5f5f5;
+}
+
+.socialAndContactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .companyInfo p {
@@ -790,5 +817,11 @@ input {
 
 .companyEmail {
   padding-bottom: 20px;
+}
+
+.contactYellowBox {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fb05;
 }
 /*# sourceMappingURL=main.css.map */
