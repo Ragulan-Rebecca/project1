@@ -347,6 +347,18 @@ span {
   font-weight: 700;
 }
 
+footer {
+  height: 5vh;
+  background: #151514;
+  color: #f5f5f5;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-top: 100px;
+}
+
 .mainHeader {
   background-image: url(../assets/header-home.jpg);
   height: 100vh;
@@ -611,18 +623,6 @@ nav ul a:hover {
 
 .bottomBanner button {
   margin: 0 auto;
-}
-
-footer {
-  height: 5vh;
-  background: #151514;
-  color: #f5f5f5;
-  font-size: 2rem;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  margin-top: 100px;
 }
 
 .blogBody {

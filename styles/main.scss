@@ -2,7 +2,8 @@
 @import "./fontsAndColors";
 @import "./mixins";
 
-// main styles
+// GLOBAL STYLES START
+
 * {
   border: 1px solid lightcoral;
   font-size: 62.5%;
@@ -73,7 +74,24 @@ span {
   font-size: 2rem;
   font-weight: 700;
 }
-// START OF HEADER
+
+footer {
+  height: 5vh;
+  background: $specialBlack;
+  color: $specialWhite;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-family: $secondaryFont;
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+//GLOBAL STYLES END
+
+
+//-----------------------------------MAIN PAGE START---
+//-MAIN- HEADER START
 
 .mainHeader {
   background-image: url(../assets/header-home.jpg);
@@ -128,9 +146,9 @@ nav ul a:hover {
   border-bottom: 2px solid $accentColor;
 }
 
-// END OF HEADER
+// -MAIN- HEADER END
 
-//New Materials Section Start
+// -MAIN- NEW MATERIALS START
 
 .materialsSection {
   display: flex;
@@ -170,9 +188,9 @@ nav ul a:hover {
   left: -8px;
 }
 
-// en dof new materials
+// -MAIN- NEW MATERIALS END
 
-// Gallery Start
+// -MAIN- GALLERY START
 
 .gallery {
   background-color: $specialGreen;
@@ -197,9 +215,10 @@ nav ul a:hover {
   display: flex;
 }
 
-// GALLERY END
+// -MAIN- GALLERY END
 
-// START OF FEATURES
+// -MAIN- FEATURES START
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -239,7 +258,9 @@ nav ul a:hover {
   margin: 0;
 }
 
-// Read More
+//-MAIN- FEATURES END
+
+// -MAIN- READ MORE START
 
 .readMore {
   display: flex;
@@ -279,9 +300,9 @@ nav ul a:hover {
   padding: 40px;
 }
 
-// end of readmore
+//-MAIN- READ MORE END
 
-//Bottom Banner Image
+//-MAIN- BOTTOM BANNER IMAGE START
 
 .bottomBannerImage {
   display: flex;
@@ -292,8 +313,9 @@ nav ul a:hover {
 .bottomBannerImage img {
   width: 100%;
 }
+//-MAIN- BOTTOM BANNER END
 
-//Bottom Style Section
+//-MAIN- BOTTOM STYLE START
 
 .bottomBanner {
   height: 50vh;
@@ -327,22 +349,12 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
-// FOOTER START
-footer {
-  height: 5vh;
-  background: $specialBlack;
-  color: $specialWhite;
-  font-size: 2rem;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  font-family: $secondaryFont;
-  font-weight: 400;
-  margin-top: 100px;
-}
+//-MAIN- BOTTOM STYLE END
+//-----------------------------------MAIN PAGE END---
 
-//FOOTER END
 
-// blog header
+//-----------------------------------BLOG PAGE START---
+//-BLOG- HEADER START
 
 .blogBody {
   background-color: $specialGreen;
@@ -371,9 +383,9 @@ footer {
   margin-bottom: 63px;
 }
 
-// end of blog header
+//-BLOG- HEADER END
 
-// blog and side bar layout
+//-BLOG- BLOG AND SIDE BAR START
 
 .blogAndSideBar {
   display: flex;
@@ -421,9 +433,9 @@ footer {
   font-size: 5rem;
 }
 
-// end of blog and side bar layout
+//-BLOG- BLOG AND SIDE BAR END
 
-// comment box layout
+//-BLOG- COMMENTS START
 
 .commentSection {
   width: 60%;
@@ -438,7 +450,9 @@ footer {
   width: 100%;
 }
 
-// BLOG FORM START
+//-BLOG- COMMENTS END
+
+//-BLOG- FORM START
 
 .blogForm {
   font-size: 6rem;
@@ -491,9 +505,11 @@ fieldset {
   width: 60%;
 }
 
-// End of Blog
+//-BLOG- FORM END
+//-----------------------------------BLOG PAGE END---
 
-// Contact Page
+//-----------------------------------CONTACT PAGE START---
+//-CONTACT- HEADER START
 .contactBody {
   background-color: $specialGreen;
 }
@@ -503,6 +519,9 @@ fieldset {
   background-image: url(../assets/contact-image.jpg);
   height: 50vh;
 }
+//-CONTACT- HEADER END
+
+//-CONTACT- FORM AND INFO START
 
 .contactFormContainer {
   width: 60%;
@@ -588,3 +607,5 @@ fieldset {
   position: absolute;
   top: 31px;
 }
+//-CONTACT- FORM AND INFO END
+//-----------------------------------CONTACT PAGE END---
