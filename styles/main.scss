@@ -134,9 +134,9 @@ nav ul a:hover {
 
 .materialsSection {
   display: flex;
-  align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .materialContent > h2 p {
@@ -149,16 +149,25 @@ nav ul a:hover {
 
 .materialsPic {
   z-index: 2;
+  position: relative;
+}
+
+.materialsPic img {
+  z-index: 3;
+}
+
+.materialContent {
+  width: 70%;
 }
 
 .yellowBox {
-  width: 304px;
-  height: 304px;
+  width: 100%;
+  height: 100%;
   background: $accentColor;
-  z-index: 2;
+  z-index: -1;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: -8px;
 }
 
 // en dof new materials
@@ -243,10 +252,20 @@ nav ul a:hover {
   width: 50%;
 }
 
-.readBox img {
-  width: 85%;
-  object-fit: cover;
+.readBoxRight {
+  display: flex;
+  justify-content: flex-end;
 }
+
+.newLocationImage div,
+.groupProgramsImage div {
+  width: 85%;
+}
+
+// .readBox img {
+
+//   object-fit: cover;
+// }
 
 .newLocationsText {
   text-align: right;
@@ -443,7 +462,7 @@ fieldset {
 //   // width: 30%;
 // }
 
-.blogFieldSet input{
+.blogFieldSet input {
   border: none;
   border-bottom: 1px solid $buttonColor;
   background-color: $specialGreen;
@@ -454,8 +473,7 @@ fieldset {
   width: 30%;
 }
 
-
-.blogTextArea{
+.blogTextArea {
   border: 1px solid $buttonColor;
   background-color: $specialGreen;
   display: block;
