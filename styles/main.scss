@@ -519,6 +519,14 @@ fieldset {
   background-image: url(../assets/contact-image.jpg);
   height: 50vh;
 }
+
+.contactHeader i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
 //-CONTACT- HEADER END
 
 //-CONTACT- FORM AND INFO START
@@ -608,4 +616,31 @@ fieldset {
   top: 31px;
 }
 //-CONTACT- FORM AND INFO END
+//-CONTACT- MEDIA QUERIES START
+@media (max-width: 600px){
+  nav{
+    display: none;
+  }
+
+    .contactHeader i{
+      visibility: visible;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      font-size: 2.5rem;
+      background-color: transparent;
+  }
+
+  .logo{
+    font-size: 5.8rem;
+  }
+  .contactFormContainer {
+    top: 16px;
+}
+
+}
+
+
+
+//-CONTACT- MEDIA QUERIES END
 //-----------------------------------CONTACT PAGE END---

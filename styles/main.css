@@ -789,6 +789,14 @@ fieldset {
   height: 50vh;
 }
 
+.contactHeader i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
 .contactFormContainer {
   width: 60%;
   position: relative;
@@ -877,5 +885,25 @@ fieldset {
   z-index: -1;
   position: absolute;
   top: 31px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .contactHeader i {
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2.5rem;
+    background-color: transparent;
+  }
+  .logo {
+    font-size: 5.8rem;
+  }
+  .contactFormContainer {
+    top: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
