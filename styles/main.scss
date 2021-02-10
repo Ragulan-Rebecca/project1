@@ -81,7 +81,7 @@ footer {
   color: $specialWhite;
   font-size: 2rem;
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 30px 0;
   font-family: $secondaryFont;
   font-weight: 400;
   margin-top: 100px;
@@ -381,6 +381,14 @@ nav ul a:hover {
   margin-bottom: 63px;
 }
 
+.blogHeader i {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
 //-BLOG- HEADER END
 
 //-BLOG- BLOG AND SIDE BAR START
@@ -614,8 +622,67 @@ fieldset {
   top: 31px;
 }
 //-CONTACT- FORM AND INFO END
-//-CONTACT- MEDIA QUERIES START
+
+//-----------------------------------CONTACT PAGE END---
+
+//-----------------------------------MEDIA QUERIES START
 @media (max-width: 600px) {
+//-MAIN-MEDIA QUERIES START
+.mainHeader{
+  height: 50vh;
+  // width: 50vw;
+}
+
+
+.headerSofa img {
+  display: none;
+}
+
+
+
+//--BLOG- MEDIA QUERIES START
+.blogHeader i {
+  visibility: visible;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2.5rem;
+  background-color: transparent;
+}
+.sideBar{
+  display: none;
+}
+.blogAndSideBar{
+  margin-top: 20px;
+}
+
+.blogPost{
+  width:100%;
+}
+
+h2{
+  font-size: 2.3rem;
+  line-height: 3.8rem;
+}
+
+p{
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.commentSection,
+.blogTextArea {
+  width: 100%;
+}
+
+.blogFieldSet input{
+  width: 100%;
+}
+.blogButton {
+  width: 100%;
+}
+//-BLOG- MEDIA QUERIES END
+//-CONTACT- MEDIA QUERIES START
+
   nav {
     display: none;
   }
@@ -681,6 +748,9 @@ fieldset {
     padding-top: 20px;
     width: 100%;
   }
+
+  footer{
+    margin-top: 20px;
+  }
 }
 //-CONTACT- MEDIA QUERIES END
-//-----------------------------------CONTACT PAGE END---
