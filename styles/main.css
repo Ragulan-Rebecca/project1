@@ -905,5 +905,52 @@ fieldset {
   .contactFormContainer {
     top: 16px;
   }
+  .formAndInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+  .contactFormContainer {
+    width: 100%;
+    position: static;
+    top: 0;
+  }
+  .contactYellowBox {
+    display: none;
+  }
+  .yellowBoxSibling {
+    z-index: 0;
+    position: static;
+  }
+  .socialAndContactInfo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contactFormContainer {
+    width: 100%;
+    position: static;
+    top: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contactFieldSet input {
+    border: none;
+    border-bottom: 1px solid #065635;
+    background-color: #f5f5f5;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-top: 20px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
