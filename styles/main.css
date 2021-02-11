@@ -560,9 +560,51 @@ nav ul a:hover {
           justify-content: flex-end;
 }
 
-.newLocationImage div,
-.groupProgramsImage div {
+.newLocationImage img {
   width: 85%;
+}
+
+.groupProgramsImage img {
+  width: 85%;
+}
+
+.leftImageParent img {
+  z-index: -1;
+}
+
+.leftImageParent {
+  position: relative;
+  z-index: 2;
+}
+
+.leftImageYellowBox {
+  width: 85%;
+  height: 90%;
+  background-color: #f8fb05;
+  z-index: -1;
+  position: absolute;
+  top: 5.1rem;
+  right: 6.7rem;
+}
+
+.rightImageParent img {
+  z-index: -1;
+  margin-left: 15%;
+}
+
+.rightImageParent {
+  position: relative;
+  z-index: 2;
+}
+
+.rightImageYellowBox {
+  width: 85%;
+  height: 62%;
+  background-color: #f8fb05;
+  z-index: -1;
+  position: absolute;
+  top: 5.1rem;
+  right: 2.7rem;
 }
 
 .newLocationsText {
@@ -978,6 +1020,9 @@ fieldset {
   .readBox {
     width: 100%;
   }
+  .groupProgramsImage img {
+    width: 100%;
+  }
   .newLocationImage {
     display: none;
   }
@@ -989,6 +1034,9 @@ fieldset {
   }
   .readMore {
     padding: 0;
+  }
+  .leftImageYellowBox {
+    display: none;
   }
   .bottomBanner {
     height: auto;

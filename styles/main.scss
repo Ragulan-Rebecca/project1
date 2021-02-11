@@ -281,14 +281,66 @@ nav ul a:hover {
   justify-content: flex-end;
 }
 
-.newLocationImage div,
-.groupProgramsImage div {
+.newLocationImage img {
   width: 85%;
 }
 
+.groupProgramsImage img {
+  width: 85%;
+}
+
+// LEFT BOX IMAGE
+
+.leftImageParent img {
+  z-index: -1;
+}
+
+.leftImageParent {
+  position: relative;
+  z-index: 2;
+}
 // .readBox img {
 
 //   object-fit: cover;
+// }
+.leftImageYellowBox {
+  width: 85%;
+  height: 90%;
+  background-color: #f8fb05;
+  z-index: -1;
+  position: absolute;
+  top: 5.1rem;
+  right: 6.7rem;
+}
+
+// RIGHT BOX IMAGE
+
+.rightImageParent img {
+  z-index: -1;
+  margin-left: 15%;
+}
+
+.rightImageParent {
+  position: relative;
+  z-index: 2;
+}
+
+.rightImageYellowBox {
+  width: 85%;
+  height: 62%;
+  background-color: #f8fb05;
+  z-index: -1;
+  position: absolute;
+  top: 5.1rem;
+  right: 2.7rem;
+}
+
+// .leftImageYellowBox {
+//   width: 100%;
+//   height: 100%;
+//   background-color: $accentColor;
+//   z-index: -1;
+//   position: absolute;
 // }
 
 .newLocationsText {
@@ -409,7 +461,6 @@ nav ul a:hover {
   margin-bottom: 30px;
   border-bottom: 10px solid $accentColor;
   border-right: 10px solid $accentColor;
-
 }
 
 .blogDate {
@@ -441,7 +492,6 @@ nav ul a:hover {
   margin-top: -2rem;
 }
 
-
 // .sideBarImage img {
 //   position: absolute;
 //   left: 14px;
@@ -454,7 +504,7 @@ nav ul a:hover {
   font-family: $secondaryFont;
   line-height: 3rem;
 }
-ul.recentPostList{
+ul.recentPostList {
   padding-left: 2rem;
 }
 //-BLOG- BLOG AND SIDE BAR END
@@ -728,6 +778,10 @@ fieldset {
     width: 100%;
   }
 
+  .groupProgramsImage img {
+    width: 100%;
+  }
+
   .newLocationImage {
     display: none;
   }
@@ -743,16 +797,21 @@ fieldset {
   .readMore {
     padding: 0;
   }
-  .bottomBanner{
+
+  .leftImageYellowBox {
+    display: none;
+  }
+
+  .bottomBanner {
     height: auto;
   }
-  .bottomBanner button{
+  .bottomBanner button {
     width: 90%;
     margin: 0;
   }
   .bottomBannerImage {
     margin-bottom: 10px;
-}
+  }
 
   .bottomBannerText {
     width: 100%;
@@ -771,10 +830,8 @@ fieldset {
     display: none;
   }
 
-
   .blogAndSideBar {
     margin-top: 20px;
-   
   }
 
   .blogPost {
