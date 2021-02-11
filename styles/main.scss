@@ -400,12 +400,16 @@ nav ul a:hover {
 .blogAndSideBar {
   display: flex;
   justify-content: space-between;
+  margin-top: -6rem;
 }
 
 .blogPost {
   width: 60%;
   background-color: $specialWhite;
   margin-bottom: 30px;
+  border-bottom: 10px solid $accentColor;
+  border-right: 10px solid $accentColor;
+
 }
 
 .blogDate {
@@ -416,33 +420,43 @@ nav ul a:hover {
 }
 
 .sideBar {
-  width: 20%;
+  width: 30%;
   background-color: $accentColor;
   position: relative;
-  height: 50vh;
+  // height: auto;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  height: 100%;
 }
 
 .sideBarText {
-  position: absolute;
   top: 304px;
   padding: 10px;
 }
 
-.sideBarImage img {
-  position: absolute;
-  left: 14px;
-  top: -20px;
-  border: 1px solid black;
+.sideBarImage {
+  width: 95%;
+  margin-left: 2.3rem;
+  margin-top: -2rem;
 }
+
+
+// .sideBarImage img {
+//   position: absolute;
+//   left: 14px;
+//   top: -20px;
+//   border: 1px solid black;
+// }
 
 .recentPostList li {
-  font-size: 5rem;
+  font-size: 2rem;
+  font-family: $secondaryFont;
+  line-height: 3rem;
 }
-
+ul.recentPostList{
+  padding-left: 2rem;
+}
 //-BLOG- BLOG AND SIDE BAR END
 
 //-BLOG- COMMENTS START
@@ -729,11 +743,21 @@ fieldset {
   .readMore {
     padding: 0;
   }
+  .bottomBanner{
+    height: auto;
+  }
+  .bottomBanner button{
+    width: 90%;
+    margin: 0;
+  }
+  .bottomBannerImage {
+    margin-bottom: 10px;
+}
 
-  // .bottomBannerImage {
-  //   margin-bottom: 0px;
-  // }
-
+  .bottomBannerText {
+    width: 100%;
+    height: auto;
+  }
   //--BLOG- MEDIA QUERIES START
   .blogHeader i {
     visibility: visible;
@@ -746,12 +770,16 @@ fieldset {
   .sideBar {
     display: none;
   }
+
+
   .blogAndSideBar {
     margin-top: 20px;
+   
   }
 
   .blogPost {
     width: 100%;
+    border: none;
   }
 
   h2 {
