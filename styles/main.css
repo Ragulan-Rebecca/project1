@@ -369,6 +369,10 @@ footer {
   background-position: center;
 }
 
+.mainHeader i {
+  visibility: hidden;
+}
+
 .headerContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,8 +903,88 @@ fieldset {
   .mainHeader {
     height: 50vh;
   }
-  .headerSofa img {
+  .homePageLogo {
+    line-height: 4rem;
+    font-size: 2.8rem;
+  }
+  .mainHeader i {
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2.5rem;
+    background-color: transparent;
+  }
+  .headerSofa img,
+  .materialsPic img {
     display: none;
+  }
+  h2 {
+    text-align: center;
+  }
+  button {
+    width: 100%;
+  }
+  .headerSofa {
+    width: 0;
+  }
+  .materialContent {
+    width: 100%;
+  }
+  .materialCombo {
+    display: none;
+  }
+  .yellowBox {
+    display: none;
+  }
+  .galleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    padding-bottom: 25px;
+  }
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featureBox {
+    width: 100%;
+  }
+  .customizedOffers {
+    text-align: left;
+  }
+  .readMore {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .readBox {
+    width: 100%;
+  }
+  .newLocationImage {
+    display: none;
+  }
+  .groupProgramsImage div {
+    width: 100%;
+  }
+  .newLocationsText {
+    text-align: left;
+  }
+  .readMore {
+    padding: 0;
   }
   .blogHeader i {
     visibility: visible;

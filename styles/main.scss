@@ -98,6 +98,10 @@ footer {
   @include headerStyles();
 }
 
+.mainHeader i {
+  visibility: hidden;
+}
+
 .headerContent {
   display: flex;
   justify-content: space-between;
@@ -627,61 +631,151 @@ fieldset {
 
 //-----------------------------------MEDIA QUERIES START
 @media (max-width: 600px) {
-//-MAIN-MEDIA QUERIES START
-.mainHeader{
-  height: 50vh;
-  // width: 50vw;
-}
+  //-MAIN-MEDIA QUERIES START
+  .mainHeader {
+    height: 50vh;
+    // width: 50vw;
+  }
 
+  .homePageLogo {
+    line-height: 4rem;
+    font-size: 2.8rem;
+  }
 
-.headerSofa img {
-  display: none;
-}
+  .mainHeader i {
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2.5rem;
+    background-color: transparent;
+  }
 
+  .headerSofa img,
+  .materialsPic img {
+    display: none;
+  }
 
+  h2 {
+    text-align: center;
+  }
 
-//--BLOG- MEDIA QUERIES START
-.blogHeader i {
-  visibility: visible;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 2.5rem;
-  background-color: transparent;
-}
-.sideBar{
-  display: none;
-}
-.blogAndSideBar{
-  margin-top: 20px;
-}
+  button {
+    width: 100%;
+  }
 
-.blogPost{
-  width:100%;
-}
+  .headerSofa {
+    width: 0;
+  }
 
-h2{
-  font-size: 2.3rem;
-  line-height: 3.8rem;
-}
+  .materialContent {
+    width: 100%;
+  }
 
-p{
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
-.commentSection,
-.blogTextArea {
-  width: 100%;
-}
+  .materialCombo {
+    display: none;
+  }
 
-.blogFieldSet input{
-  width: 100%;
-}
-.blogButton {
-  width: 100%;
-}
-//-BLOG- MEDIA QUERIES END
-//-CONTACT- MEDIA QUERIES START
+  .yellowBox {
+    display: none;
+  }
+
+  .galleryContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    padding-bottom: 25px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .featureBox {
+    width: 100%;
+  }
+
+  .customizedOffers {
+    text-align: left;
+  }
+
+  .readMore {
+    flex-direction: column;
+  }
+
+  .readBox {
+    width: 100%;
+  }
+
+  .newLocationImage {
+    display: none;
+  }
+
+  .groupProgramsImage div {
+    width: 100%;
+  }
+
+  .newLocationsText {
+    text-align: left;
+  }
+
+  .readMore {
+    padding: 0;
+  }
+
+  // .bottomBannerImage {
+  //   margin-bottom: 0px;
+  // }
+
+  //--BLOG- MEDIA QUERIES START
+  .blogHeader i {
+    visibility: visible;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2.5rem;
+    background-color: transparent;
+  }
+  .sideBar {
+    display: none;
+  }
+  .blogAndSideBar {
+    margin-top: 20px;
+  }
+
+  .blogPost {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+    line-height: 3.8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .commentSection,
+  .blogTextArea {
+    width: 100%;
+  }
+
+  .blogFieldSet input {
+    width: 100%;
+  }
+  .blogButton {
+    width: 100%;
+  }
+  //-BLOG- MEDIA QUERIES END
+  //-CONTACT- MEDIA QUERIES START
 
   nav {
     display: none;
@@ -749,7 +843,7 @@ p{
     width: 100%;
   }
 
-  footer{
+  footer {
     margin-top: 20px;
   }
 }
